@@ -1,0 +1,60 @@
+login() {
+            // 处理登录逻辑
+            // 获取用户名和密码
+            const { username, password } = this.form
+            this.$refs['form'].validate(async (valid) => {
+                if (valid) {
+                    try {
+                        let msg = '提交成功'
+                        if (username && password) {
+                            console.log(username, password)
+                            await userAdminLogin(this.form)
+                            this.$router.push('/index')
+                        }
+                        this.$message.success(msg)
+                    } catch (error) {
+                        console.log(error)
+                        // this.$message.error(error.msg)
+                        // 登录失败，处理错误信息或给出提示
+                        // if (error.response && error.response.data) {
+                        //     const { message } = error.response.data
+                        //     if (message === 'Username is a required field.') {
+                        //         this.$alert(
+                        //             'Username is a required field.',
+                        //             '错误',
+                        //             {
+                        //                 confirmButtonText: '确定',
+                        //             }
+                        //         )
+                        //     } else if (
+                        //         message === 'Password is a required field.'
+                        //     ) {
+                        //         this.$alert(
+                        //             'Password is a required field.',
+                        //             '错误',
+                        //             {
+                        //                 confirmButtonText: '确定',
+                        //             }
+                        //         )
+                        //     } else if (message === 'Invalid credentials.') {
+                        //         this.$alert('Invalid credentials.', '错误', {
+                        //             confirmButtonText: '确定',
+                        //         })
+                        //     }
+                        // }
+                    }
+                } else {
+                    // 用户名或密码为空，给出提示信息
+                    // if (!username) {
+                    //     this.$alert('Username is a required field.', '错误', {
+                    //         confirmButtonText: '确定',
+                    //     })
+                    // } else if (!password) {
+                    //     this.$alert('Password is a required field.', '错误', {
+                    //         confirmButtonText: '确定',
+                    //     })
+                    // }
+                    return false
+                }
+            })
+        },
