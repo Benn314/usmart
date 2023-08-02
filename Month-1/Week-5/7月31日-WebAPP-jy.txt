@@ -1,0 +1,10 @@
+https://m-sit.yxzq.com/webapp/middle/register.html?isSimple=&callBackUrl=http%3A%2F%2Flocalhost%3A8080%2Fwebapp%2Fopen-account-hk%2Fwithdrawal.html%3FfirstLogin%3Dnull%23%2Ffunds%3Fid%3D1197319548527411200&firstLogin=null#/
+
+用户类型: 登录用户
+用户ID: 720983683862982656
+TOKEN: string@eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uIjoiMWQ1NzE2ODU3ZDJmNDY2YWEyNmYyMTEzODFhMTQ0NzEiLCJzb3VyY2UiOiJhcHAiLCJ1dWlkIjo3MjA5ODM2ODM4NjI5ODI2NTZ9.mHYCdln7kAl2P2cTEPw_Qqp9lCas60A_w8A_VL1THKM
+PushInfo: channel = xiaomi，token = L5fTesoRjbNVstzjEBzFYAST39IfTN+Zbf2in9aqRuDamGlwXEVgpehApa08gswZ，topic = simple
+
+
+https://m-sit.yxzq.com/webapp/open-account-hk/withdrawal.html?&firstLogin=null#/funds
+
